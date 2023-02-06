@@ -94,7 +94,10 @@ which python3
 which brew86
 which func
 ```
+
+
 ### Running Azure Function Locally
+
 Now all the required packages are installed it is time to run new azure function
 
 1. Create new virtual environment and activate it.
