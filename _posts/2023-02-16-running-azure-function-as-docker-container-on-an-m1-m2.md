@@ -29,6 +29,7 @@ docker build --platform linux/amd64 -t <image-name> .
 ```
 
 
+
 However, when running the docker container `docker run -p 8080:80 -t <image-name>`  you will get the following error
 
 ```bash
