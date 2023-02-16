@@ -46,10 +46,10 @@ System.IO.IOException: Function not implemented
 
 This error is due to running x86-based Docker on a Mac with apple silicon processor (M1, M2) through **QEMU** emulation, which often causes compatibility issues and corrupt dependencies hence run time crashes.
 
-Fortunately, Docker has implemented a new feature that allows running images built for x68 architecture on MAC using Apple Rosetta 2 emulator instead of **QEMU**
-
 
 ## Solution
+
+Fortunately, Docker has implemented a new feature that allows running images built for x68 architecture on MAC using Apple Rosetta 2 emulator instead of **QEMU**
 
 In order to enable Rosseta 2 virtualization feature in Docker follow the steps below:
 
