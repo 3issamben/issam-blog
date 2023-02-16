@@ -28,6 +28,7 @@ The first thing that comes to mind in this case is to add the target platform wh
 docker build --platform linux/amd64 -t <image-name> .
 ```
 
+
 However, when running the docker container `docker run -p 8080:80 -t <image-name>`  you will get the following error
 
 ```bash
@@ -41,6 +42,7 @@ System.IO.IOException: Function not implemented
    at System.IO.FileSystemWatcher.StartRaisingEventsIfNotDisposed()
    at System.IO.FileSystemWatcher.set_EnableRaisingEvents(Boolean value)
 ```
+
 
 This error is due to running x86-based Docker on a Mac with apple silicon processor (M1, M2) through **QEMU** emulation, which often causes compatibility issues and corrupt dependencies hence run time crashes.
 
